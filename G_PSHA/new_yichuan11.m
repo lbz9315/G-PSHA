@@ -191,7 +191,7 @@ for iter = 1:numIter
             totalDist(p)=Inf;
             continue;
         else
-            %  要改应该是改这里，还要不要让他进行  5000*80  次的迭代？***************************************************        
+                
 %             sum_Length=[];
             for qq=1:nSalesmen
                a2{qq}=[xy(1,:);a2{qq};xy(N,:)];   % 加上起点和终点
@@ -317,7 +317,7 @@ for iter = 1:numIter
                     % 自己看吧，描述不出
                     tmpPopRoute(k,I:J) = tmpPopRoute(k,[I+1:J I]);
                     %上面都是调整路径基因型的
-                    %下面用于调整中断点基因型，过程差不多，大家可以自己看的     ***********中断点的调整？？？？？
+                    %下面用于调整中断点基因型，过程差不多，大家可以自己看的    
                 case 5 % Modify Breaks
                     %随机产生，跟最佳父代没关系的一代。
                     tmpPopBreak(k,:) = rand_breaks();
