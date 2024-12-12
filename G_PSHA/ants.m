@@ -1,5 +1,5 @@
 
-function [shortest_Length,shortest_Route]=recaluculate(r,A)   
+function [shortest_Length,shortest_Route]=recalculate(r,A)   
 citys=A;
 
 hold on;
